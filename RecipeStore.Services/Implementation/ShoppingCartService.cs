@@ -4,8 +4,10 @@ using RecipeStore.Repository.EntityFramework;
 using RecipeStore.Services.Interfaces;
 using RecipeStore.Services.Mapping;
 using RecipeStore.Services.Message;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace RecipeStore.Services.Implementation
 {
@@ -36,28 +38,11 @@ namespace RecipeStore.Services.Implementation
             {
                 CartRefCookie = request.model.CartRefCookie
             };
+
             if (request.model.Recipes != null && request.model.Recipes.Count() > 0)
             {
-                var recipesIds = request.model.Recipes.ToArray();
-                var recipes = _recipeRepository.GetAll("ShoppingCartItems", "ShoppingCartItems.Ingredient");
-
-                foreach (var recipe in recipes)
-                {
-                    //var ingredients
-                }
-
-                //var items = new List<ShoppingCartItem>();
-                //foreach (var item in request.model.Ingredients)
-                //{
-                //    var newItem = new ShoppingCartItem
-                //    {
-                //        IngredientId = item.IngredientId,
-                //        Measure = (Measure)item.Measure,
-                //        Quantity = item.Quantity
-                //    };
-                //    items.Add(newItem);
-                //}
-                //cart.ShoppingCartItems = items.AsEnumerable();
+                var soppingCartItems = GetRecipeItemsSum(request.filter, request.model.Recipes.ToList());
+                cart.ShoppingCartItems = soppingCartItems.AsEnumerable();
             }
 
             if (!cart.isValid())
@@ -66,7 +51,7 @@ namespace RecipeStore.Services.Implementation
             _shoppingCartRepository.Insert(cart);
             _unitOfWork.Commit();
 
-            //response.cart = cart.ToShoppingCartViewModel();
+            response.cart = cart.ToShoppingCartViewModel();
             return response;
         }
 
@@ -76,8 +61,46 @@ namespace RecipeStore.Services.Implementation
             response.list = _shoppingCartRepository
                                 .GetAll(request.filter, request.orderBy, "ShoppingCartItems", "ShoppingCartItems.Ingredient")
                                 .ToShoppingCartViewModel();
-
             return response;
+        }
+
+        public GetShoppingCartSugestionResponse GetShoppingCartSugestion(GetShoppingCartSugestionRequest request)
+        {
+            var response = new GetShoppingCartSugestionResponse();
+            var soppingCartItems = GetRecipeItemsSum(request.filter, request.model.Recipes.ToList());
+
+            var cart = new ShoppingCart()
+            {
+                ShoppingCartItems = soppingCartItems.AsEnumerable()
+            };
+
+            response.cart = cart.ToShoppingCartViewModel();
+            return response;
+        }
+
+        private List<ShoppingCartItem> GetRecipeItemsSum(Expression<Func<Entity.Recipe, bool>> filter, List<Guid> Recipes)
+        {
+            var recipesIds = Recipes.ToArray();
+            var recipes = _recipeRepository.GetAll(filter, null, "ShoppingCartItems", "ShoppingCartItems.Ingredient");
+
+            var ingredients = new List<RecipeItem>();
+            foreach (var recipe in recipes)
+            {
+                ingredients.AddRange(recipe.Ingredients);
+            }
+
+            List<ShoppingCartItem> soppingCartItems = ingredients
+                                        .GroupBy(i => new { i.Ingredient.Id, i.Measure })
+                                        .Select(i => new ShoppingCartItem
+                                        {
+                                            Ingredient = i.FirstOrDefault().Ingredient,
+                                            Quantity = i.Sum(item => item.Quantity),
+                                            IngredientId = i.FirstOrDefault().IngredientId,
+                                            Measure = i.FirstOrDefault().Measure
+                                        })
+                                        .ToList();
+
+            return soppingCartItems;
         }
     }
 }

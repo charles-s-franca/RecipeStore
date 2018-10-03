@@ -6,3 +6,4 @@ C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0
 C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\bin\Debug\netcoreapp2.0\RecipeStore.Helpers.pdb
 C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.dll
 C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.pdb
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.csprojResolveAssemblyReference.cache

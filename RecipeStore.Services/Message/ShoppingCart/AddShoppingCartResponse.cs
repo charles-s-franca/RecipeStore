@@ -6,6 +6,6 @@ namespace RecipeStore.Services.Message
 {
     public class AddShoppingCartResponse
     {
-        public SoppingCartViewModel cart { get; set; }
+        public RecipeStoreViewModel.ShoppingCartViewModel cart { get; set; }
     }
 }

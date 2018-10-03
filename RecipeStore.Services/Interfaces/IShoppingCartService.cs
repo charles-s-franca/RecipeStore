@@ -6,5 +6,6 @@ namespace RecipeStore.Services.Interfaces
     {
         GetShoppingCartsResponse GetShoppingCart(GetShoppingCartsRequest request);
         AddShoppingCartResponse AddShoppingCarts(AddShoppingCartRequest request);
+        GetShoppingCartSugestionResponse GetShoppingCartSugestion(GetShoppingCartSugestionRequest request);
     }
 }

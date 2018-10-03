@@ -7,6 +7,6 @@ namespace RecipeStoreViewModel
     public class ShoppingCartViewModel
     {
         public Guid? Id { get; set; }
-        public IEnumerable<RecipeItemViewModel> Ingredients { get; set; }
+        public IEnumerable<ShoppingCartItemViewModel> ShoppingCartItems { get; set; }
     }
 }

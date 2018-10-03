@@ -16,6 +16,8 @@ namespace RecipeStore.Services
                 x.CreateMap<RecipeItem, RecipeItemViewModel>();
                 x.CreateMap<Ingredient, IngredientViewModel>();
                 x.CreateMap<Measure, MeasureViewModel>();
+                x.CreateMap<ShoppingCart, ShoppingCartViewModel>();
+                x.CreateMap<ShoppingCartItem, ShoppingCartItemViewModel>();
             });
         }
     }

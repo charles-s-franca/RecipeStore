@@ -6,3 +6,4 @@ C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\
 C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.AssemblyInfo.cs
 C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.dll
 C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.pdb
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.csprojResolveAssemblyReference.cache
