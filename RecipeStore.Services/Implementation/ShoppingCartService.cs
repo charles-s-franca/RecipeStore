@@ -81,7 +81,7 @@ namespace RecipeStore.Services.Implementation
         private List<ShoppingCartItem> GetRecipeItemsSum(Expression<Func<Entity.Recipe, bool>> filter, List<Guid> Recipes)
         {
             var recipesIds = Recipes.ToArray();
-            var recipes = _recipeRepository.GetAll(filter, null, "ShoppingCartItems", "ShoppingCartItems.Ingredient");
+            var recipes = _recipeRepository.GetAll(filter, null, "Ingredients", "Ingredients.Ingredient");
 
             var ingredients = new List<RecipeItem>();
             foreach (var recipe in recipes)

@@ -4,6 +4,7 @@ using RecipeStore.Services.Interfaces;
 using RecipeStoreViewModel;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 
 namespace RecipeStore.Controllers
@@ -22,7 +23,7 @@ namespace RecipeStore.Controllers
         }
 
         [HttpGet("")]
-        public ApiResponse<IEnumerable<ShoppingCartViewModel>> GetRecipes()
+        public ApiResponse<IEnumerable<ShoppingCartViewModel>> GetCarts()
         {
             try
             {
@@ -36,6 +37,27 @@ namespace RecipeStore.Controllers
             {
                 Console.Write(ex);
                 return ApiResponse<IEnumerable<ShoppingCartViewModel>>.CreateResponse(false, "An unexpected error occured.", null, code: HttpStatusCode.InternalServerError);
+            }
+        }
+
+        [HttpGet("cart-suggestion")]
+        public ApiResponse<ShoppingCartViewModel> GetCartSuggestion(string CartRefCookie, List<Guid> recipeIds)
+        {
+            try
+            {
+                return ApiResponse<ShoppingCartViewModel>.CreateResponse(true, "", _shoppingCartService.GetShoppingCartSugestion(new Services.Message.GetShoppingCartSugestionRequest()
+                {
+                    model = new NewShoppingCartViewModel() { Recipes = recipeIds, CartRefCookie = CartRefCookie }
+                }).cart);
+            }
+            catch (BusinessRuleException ex)
+            {
+                return ApiResponse<ShoppingCartViewModel>.CreateResponse(false, ex.Message, null, rules: ex.brokenRules, code: HttpStatusCode.BadRequest);
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex);
+                return ApiResponse<ShoppingCartViewModel>.CreateResponse(false, "An unexpected error occured.", null, code: HttpStatusCode.InternalServerError);
             }
         }
 
