@@ -1,0 +1,40 @@
+﻿using Microsoft.EntityFrameworkCore;
+using RecipeStore.Domain.Data;
+using System;
+using System.Transactions;
+
+namespace RecipeStore.Repository.EntityFramework
+{
+    public class UnitOfWork : IUnitOfWork
+    {
+        private TransactionScope _transaction;
+        private readonly AppContext _db;
+
+        public UnitOfWork(IAppContext appContext)
+        {
+            _db = (AppContext)appContext;
+        }
+
+        public void Dispose()
+        {
+
+        }
+
+        public void StartTransaction()
+        {
+            _transaction = new TransactionScope();
+        }
+
+        public void Commit()
+        {
+            _db.SaveChanges();
+            if (_transaction != null)
+                _transaction.Complete();
+        }
+
+        public DbContext Db
+        {
+            get { return _db; }
+        }
+    }
+}

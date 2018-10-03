@@ -1,0 +1,8 @@
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\bin\Debug\netcoreapp2.0\RecipeStore.Helpers.deps.json
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\bin\Debug\netcoreapp2.0\RecipeStore.Helpers.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.csproj.CoreCompileInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.AssemblyInfoInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.AssemblyInfo.cs
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\bin\Debug\netcoreapp2.0\RecipeStore.Helpers.pdb
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Helpers\obj\Debug\netcoreapp2.0\RecipeStore.Helpers.pdb

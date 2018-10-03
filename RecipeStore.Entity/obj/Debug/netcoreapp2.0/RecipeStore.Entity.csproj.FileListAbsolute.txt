@@ -1,0 +1,12 @@
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.csprojResolveAssemblyReference.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.csproj.CoreCompileInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.AssemblyInfoInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.AssemblyInfo.cs
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Entity.deps.json
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Entity.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Entity.pdb
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Domain.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\bin\Debug\netcoreapp2.0\RecipeStore.Domain.pdb
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.csproj.CopyComplete
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Entity\obj\Debug\netcoreapp2.0\RecipeStore.Entity.pdb

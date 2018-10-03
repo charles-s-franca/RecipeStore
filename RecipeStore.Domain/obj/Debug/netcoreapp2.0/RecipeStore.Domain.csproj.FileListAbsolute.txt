@@ -1,0 +1,8 @@
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\bin\Debug\netcoreapp2.0\RecipeStore.Domain.deps.json
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\bin\Debug\netcoreapp2.0\RecipeStore.Domain.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\bin\Debug\netcoreapp2.0\RecipeStore.Domain.pdb
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.csproj.CoreCompileInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.AssemblyInfoInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.AssemblyInfo.cs
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStore.Domain\obj\Debug\netcoreapp2.0\RecipeStore.Domain.pdb

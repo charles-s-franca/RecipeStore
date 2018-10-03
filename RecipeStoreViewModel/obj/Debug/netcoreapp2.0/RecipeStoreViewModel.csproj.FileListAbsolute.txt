@@ -1,0 +1,9 @@
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\bin\Debug\netcoreapp2.0\RecipeStoreViewModel.deps.json
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\bin\Debug\netcoreapp2.0\RecipeStoreViewModel.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\bin\Debug\netcoreapp2.0\RecipeStoreViewModel.pdb
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.csprojResolveAssemblyReference.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.csproj.CoreCompileInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.AssemblyInfoInputs.cache
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.AssemblyInfo.cs
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.dll
+C:\workspaces\aspnetcore\RecipeStore\RecipeStoreViewModel\obj\Debug\netcoreapp2.0\RecipeStoreViewModel.pdb
