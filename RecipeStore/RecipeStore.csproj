@@ -25,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\SampleDataController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RecipeStore.Domain\RecipeStore.Domain.csproj" />
     <ProjectReference Include="..\RecipeStore.Entity\RecipeStore.Entity.csproj" />
     <ProjectReference Include="..\RecipeStore.Helpers\RecipeStore.Helpers.csproj" />

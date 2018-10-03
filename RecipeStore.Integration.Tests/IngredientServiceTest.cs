@@ -8,13 +8,13 @@ namespace RecipeStore.Integration.Tests
     [TestClass]
     public class IngredientServiceTest
     {
-        public IIngredinetService _ingredientService { get; set; }
+        public IIngredientService _ingredientService { get; set; }
         [TestInitialize]
         public void Init()
         {
             StructureMapSetup.Config();
             Services.AutomapperSetup.Config();
-            _ingredientService = StructureMapSetup.Container.GetInstance<IIngredinetService>();
+            _ingredientService = StructureMapSetup.Container.GetInstance<IIngredientService>();
         }
 
         [TestMethod]

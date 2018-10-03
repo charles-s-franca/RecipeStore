@@ -22,7 +22,7 @@ namespace RecipeStore.Integration.Tests
                 _.For<IRecipeRepository>().Use<RecipeRepository>();
                 _.For<IIngredientRepsitory>().Use<IngredientRepository>();
                 _.For<IRecipeService>().Use<RecipeService>();
-                _.For<IIngredinetService>().Use<IngredientService>();
+                _.For<IIngredientService>().Use<IngredientService>();
             });
 
             StructureMapSetup.Container = container;

@@ -2,7 +2,7 @@
 
 namespace RecipeStore.Services.Interfaces
 {
-    public interface IIngredinetService
+    public interface IIngredientService
     {
         GetIngredientsResponse GetIngredients(GetIngredientsRequest request);
         AddIngredientResponse AddIngredients(AddIngredientRequest request);

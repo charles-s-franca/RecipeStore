@@ -12,9 +12,10 @@ using System;
 namespace RecipeStore.Repository.EntityFramework.Migrations
 {
     [DbContext(typeof(AppContext))]
-    partial class AppContextModelSnapshot : ModelSnapshot
+    [Migration("20181003172533_CartCoockieRef")]
+    partial class CartCoockieRef
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

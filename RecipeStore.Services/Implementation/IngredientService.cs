@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace RecipeStore.Services.Implementation
 {
-    public class IngredientService : IIngredinetService
+    public class IngredientService : IIngredientService
     {
         public IUnitOfWork _unitOfWork { get; set; }
         public IIngredientRepsitory _ingredientRepository { get; set; }
@@ -43,7 +43,7 @@ namespace RecipeStore.Services.Implementation
         public GetIngredientsResponse GetIngredients(GetIngredientsRequest request)
         {
             var response = new GetIngredientsResponse();
-            response.list = _ingredientRepository.GetAll(request.filter, request.orderBy, "Ingredients", "Ingredients.Ingredient").ToIngredientViewModel();
+            response.list = _ingredientRepository.GetAll(request.filter, request.orderBy).ToIngredientViewModel();
             return response;
         }
     }

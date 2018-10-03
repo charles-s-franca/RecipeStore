@@ -39,6 +39,7 @@ namespace RecipeStore
             // Services
             services.AddTransient<IRecipeService, RecipeService>();
             services.AddTransient<IShoppingCartService, ShoppingCartService>();
+            services.AddTransient<IIngredientService, IngredientService>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
